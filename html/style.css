@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hud {
+    position: absolute;
+    bottom: 25px; /* au-dessus de la minimap */
+    left: 350px;  /* alignement personnalisé */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 999;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 6px 10px;
+    width: 180px;
+    height: 28px;
+}
+
+.icon {
+    font-size: 16px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Animation pulse pour faibles niveaux */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.low {
+    animation: pulse 1s infinite;
+}
+
+/* Animation rebond pour les icônes */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.icon.animate {
+    animation: bounce 0.5s ease;
+}
+
+.bar {
+    flex: 1;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+    transition: width 0.3s ease;
+}
+
+.thirst .fill {
+    background: dodgerblue;
+}

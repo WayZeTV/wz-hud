@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HUD Status</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- HUD Principal -->
+    <div id="hud">
+        <div class="status-bar hunger">
+            <div class="icon">🍗</div>
+            <div class="bar"><div class="fill" id="hunger-fill"></div></div>
+        </div>
+        <div class="status-bar thirst">
+            <div class="icon">💧</div>
+            <div class="bar"><div class="fill" id="thirst-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Menu NUI -->
+    <div id="hud-menu" style="display: none;">
+        <h2>Paramètres HUD</h2>
+
+        <label><input type="checkbox" id="toggle-hunger" checked> Afficher la faim</label><br>
+        <label><input type="checkbox" id="toggle-thirst" checked> Afficher la soif</label><br>
+
+        <label for="color-hunger">Couleur faim :</label>
+        <input type="color" id="color-hunger" value="#00ff00"><br>
+
+        <label for="color-thirst">Couleur soif :</label>
+        <input type="color" id="color-thirst" value="#1e90ff"><br>
+
+        <button id="save-btn">Sauvegarder</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
