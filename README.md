@@ -4,7 +4,7 @@ Bonjour à tous, je vous présente aujourd'hui cet hud qui permet d'afficher la 
 
 # Preview
 
- - [Ressource Preview]([[Cliquez Ici](https://youtu.be/cWUQPOYNgkQ)]()) 
+ - [Ressource Preview]([Cliquez Ici](https://youtu.be/cWUQPOYNgkQ)]) 
 
 
 # Installation
